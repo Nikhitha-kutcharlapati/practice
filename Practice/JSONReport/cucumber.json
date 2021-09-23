@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-22T14:04:20.968Z",
+        "line": 4,
+        "name": "automate the form",
+        "description": "",
+        "id": "practice-action;automate-the-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10830585000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open browser and selenium practice form",
+            "match": {
+              "location": "stepdefinition.Practiceselform.open_browser_and_selenium_practice_form()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169547900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter \"\u003cfirstname\u003e\" in the firstname input",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cfirstname\u003e\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinition.Practiceselform.user_enter_in_the_firstname_input(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68815300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter \"\u003clastname\u003e\" in the lastname input",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003clastname\u003e\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinition.Practiceselform.user_enter_in_the_lastname_input(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52859100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User select gender",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_select_gender()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53855800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User select years of experience",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_select_years_of_experience()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63829600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter \"\u003cdate\u003e\" in the date input field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cdate\u003e\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinition.Practiceselform.user_enter_in_the_date_input_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cinput id\u003d\"profession-0\" name\u003d\"profession\" style\u003d\"font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;\" type\u003d\"checkbox\" value\u003d\"Manual Tester\"\u003e is not clickable at point (269, 662). Other element would receive the click: \u003cdiv class\u003d\"cookie-choices-inner\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d93.0.4577.82)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DIN82001000\u0027, ip: \u002710.31.164.250\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\\Users\\kunikhit\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a447c7fdd7612a685d47899b269a241b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat page.Practiceform.setProfession(Practiceform.java:133)\r\n\tat stepdefinition.Practiceselform.user_selects_the_profession(Practiceselform.java:63)\r\n\tat ✽.User selects the profession(file:///C:/Users/kunikhit/eclipse-workspace/Practice/src/test/resources/features/practiceform.feature:11)\r\n",
+              "duration": 1090779400,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User selects the profession",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_selects_the_profession()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1288900,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User selects the automation tools",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_selects_the_automation_tools()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User selects the continents",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_selects_the_continents()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User selects the selenium commands",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_selects_the_selenium_commands()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User uploads image",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_uploads_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997400,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user download the file\u0027",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_download_the_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user clicks on submit button",
+            "match": {
+              "location": "stepdefinition.Practiceselform.user_clicks_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "the data gets submitted",
+            "match": {
+              "location": "stepdefinition.Practiceselform.the_data_gets_submitted()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Practice Action",
+    "description": "    Description: This feature will test the form functionality",
+    "id": "practice-action",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/practiceform.feature",
+    "tags": []
+  }
+]

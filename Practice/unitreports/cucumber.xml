@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.563">
+    <testcase classname="Practice Action" name="automate the form" time="12.362">
+        <failure message="element click intercepted: Element &lt;input id=&quot;profession-0&quot; name=&quot;profession&quot; style=&quot;font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;&quot; type=&quot;checkbox&quot; value=&quot;Manual Tester&quot;&gt; is not clickable at point (269, 662). Other element would receive the click: &lt;div class=&quot;cookie-choices-inner&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=93.0.4577.82)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DIN82001000', ip: '10.31.164.250', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\kunikhit\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a447c7fdd7612a685d47899b269a241b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given Open browser and selenium practice form...............................passed
+When User enter "<firstname>" in the firstname input........................passed
+And User enter "<lastname>" in the lastname input...........................passed
+And User select gender......................................................passed
+And User select years of experience.........................................passed
+And User enter "<date>" in the date input field.............................passed
+And User selects the profession.............................................failed
+And User selects the automation tools.......................................skipped
+And User selects the continents.............................................skipped
+And User selects the selenium commands......................................skipped
+And User uploads image......................................................skipped
+And user download the file'.................................................skipped
+And user clicks on submit button............................................skipped
+Then the data gets submitted................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id="profession-0" name="profession" style="font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;" type="checkbox" value="Manual Tester"> is not clickable at point (269, 662). Other element would receive the click: <div class="cookie-choices-inner">...</div>
+  (Session info: chrome=93.0.4577.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DIN82001000', ip: '10.31.164.250', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\kunikhit\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a447c7fdd7612a685d47899b269a241b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page.Practiceform.setProfession(Practiceform.java:133)
+	at stepdefinition.Practiceselform.user_selects_the_profession(Practiceselform.java:63)
+	at ✽.User selects the profession(file:///C:/Users/kunikhit/eclipse-workspace/Practice/src/test/resources/features/practiceform.feature:11)
+]]></failure>
+    </testcase>
+</testsuite>
