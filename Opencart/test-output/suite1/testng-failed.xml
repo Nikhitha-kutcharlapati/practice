@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="test2(failed)">
+    <classes>
+      <class name="com.runner.DemocartRunnertwo">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.runner.DemocartRunnertwo -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test thread-count="5" name="test3(failed)">
+    <classes>
+      <class name="Parameterization.LoginbypassingParams">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Parameterization.LoginbypassingParams -->
+    </classes>
+  </test> <!-- test3(failed) -->
+  <test thread-count="5" name="test4(failed)">
+    <classes>
+      <class name="Parameterization.RegisterbyPassingParams">
+        <methods>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Parameterization.RegisterbyPassingParams -->
+    </classes>
+  </test> <!-- test4(failed) -->
+</suite> <!-- Failed suite [suite1] -->

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="37.266">
+    <testcase classname="Register Action" name="Validation of myAccount dropdown with respect to register" time="5.877">
+        <system-out><![CDATA[Given User is on home page..................................................passed
+When User clicks on MyAccount dropdown......................................passed
+And Click on register.......................................................passed
+Then System should navigate to register page................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register Action" name="Register with valid Credentials" time="7.234">
+        <system-out><![CDATA[Given Open browser and registerpage of democart.............................passed
+When User enter "<firstname>" in the firstname input........................passed
+And User enter "<lastname>" in the lastname input...........................passed
+And User enter "<emailaddress>" in the email input..........................passed
+And User enter "<telephone-no"> in telephone input..........................passed
+And User enter "nick4567" in the password input.............................passed
+And User enter "nick4567" in the password confirmation input................passed
+And User subscribe/unsubscribe the news letter..............................passed
+And User agrees to privacy policy...........................................passed
+And User clicks on continue button..........................................passed
+Then User should get signedin...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register Action" name="Register with invalid firstname and lastname" time="5.924">
+        <system-out><![CDATA[Given User is on registerpage...............................................passed
+When User enter invalid "<firstname>"  "<lastname>"  "<emailaddress>"  "<telephone-no>" "<password>"  "<password>" in the inputs.passed
+And User subscribe/unsubscribe the news letter button.......................passed
+And User agrees to  the privacy policy......................................passed
+And User click on button to continue........................................passed
+Then registraion fails and error messages displayed.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register Action" name="uncheck the privacy policy" time="6.134">
+        <system-out><![CDATA[Given User is on registerpage of application................................passed
+When User enter valid "<firstname>"  "<lastname>"  "<emailaddress>"  "<telephone-no>" "<password>"  "<password>" in the inputs.passed
+Then User clicks on continue button for register............................passed
+Then registraion fails and Warning displayed................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register Action" name="Warning for email" time="6.889">
+        <system-out><![CDATA[Given System is on opencart registerpage....................................passed
+When User enter valid values "<firstname>"  "<lastname>"....................passed
+And invalid "<emailaddress>" in email input field...........................passed
+And valid values of  "<telephone-no"> "<password>"  "<password>" in the input fields.passed
+Then User click on continue button..........................................passed
+Then registration fails and Warning for mail is displayed...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register Action" name="If user have an account already" time="4.958">
+        <system-out><![CDATA[Given User is on democart application register page.........................passed
+When User already have an account _ click on login..........................passed
+Then User redirects to login page...........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

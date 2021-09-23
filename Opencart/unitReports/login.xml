@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="40.806">
+    <testcase classname="Login Action" name="Validation of myAccount dropdown with respect to login" time="11.829">
+        <system-out><![CDATA[Given Openchrome and start the application..................................passed
+When User clicks on MyAccount dropdown......................................passed
+And Click on login..........................................................passed
+Then System should navigate to login page...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Action" name="Login with valid username and password" time="12.029">
+        <system-out><![CDATA[Given Open chrome and navigate to login page................................passed
+When User enters valid "<username>" and "<password>"........................passed
+And Click on login button...................................................passed
+Then User should get logged in..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Action" name="Validate login with invalid data" time="11.328">
+        <system-out><![CDATA[Given Open chrome browser and navigate to login page........................passed
+When Enter invalid credentials in "user1" and "hello" fields................passed
+And Click on login button for login.........................................passed
+Then It should display error message........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Action" name="Validation of forgot password link" time="5.384">
+        <system-out><![CDATA[Given User is on login page.................................................passed
+When User clicks on forget password link....................................passed
+Then System navigates to Forgot password page...............................passed
+]]></system-out>
+    </testcase>
+</testsuite>
